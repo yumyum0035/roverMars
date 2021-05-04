@@ -1,0 +1,7 @@
+{
+  "name": "roverMars",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
