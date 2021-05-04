@@ -1,5 +1,5 @@
 {
-  "name": "roverMars",
+  "name": "rovermars",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "d": "git push && ng build --prod && firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
