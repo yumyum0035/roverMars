@@ -11,7 +11,7 @@ import { HelperServiceService } from '../../services/helper-service.service';
 export class RoverComponent implements OnInit {
   arrow = 'arrow-up-circle-outline';
   roverUpdated: Rover;
-  orders: string[] = ['R','A','L'];
+  orders: string[] = ['R','A','L','A','R','A','A'];
 
   constructor(private helperService: HelperServiceService) { }
 

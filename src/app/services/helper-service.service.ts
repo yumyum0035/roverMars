@@ -99,12 +99,13 @@ export class HelperServiceService {
         setTimeout(()=>{
           this.moveRover(rover, element);
           console.log(`${rover.successTrip}, ${rover.orientation}, (${rover.coordinates.x},${rover.coordinates.y})`);
-        }, i*400);
+        }, i*1000);
       });
-      
       return this.roverUpdated = rover;
     }
 
   }
+
+  
   
 }
