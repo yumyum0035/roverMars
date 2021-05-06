@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+.square {
+  border: red solid 3px;
+  position: relative;
+}
+
+.rover {
+  position: absolute;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+}
+

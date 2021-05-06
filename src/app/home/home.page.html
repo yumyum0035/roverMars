@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Mars Rover
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <p>Write width in px</p>
+    <p><input type="number" min="100" max="1000" (keyup)="getWidthValue($event.target.value)"></p>
+    <p>Write height in px</p>
+    <p><input type="number" min="100" max="1000" (keyup)="getHeightValue($event.target.value)"></p>
+    <p>Orders:</p>
+    <p>write A (advance), L (left) or R (right)</p>
+    <p><input type="text" (keyup)="getOrders($event.target.value)"></p>
+    <p>Coordinates:</p>
+    <p><input type="text" (keyup)="getCoord($event.target.value)"></p>
+  </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+  <div class="square" [style.width]="width" [style.height]="height">
+    <app-rover class="rover"></app-rover>
   </div>
 </ion-content>
