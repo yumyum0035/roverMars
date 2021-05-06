@@ -9,8 +9,8 @@ export interface Coordinates {
 }
 
 export interface Rover {
-    direction: 'A' | 'L' | 'R';
+    command: 'A' | 'L' | 'R';
     orientation: 'N' | 'E' | 'S' | 'W';
     coordinates: Coordinates;
-    sucessTrip: boolean;
+    successTrip: boolean;
 }
